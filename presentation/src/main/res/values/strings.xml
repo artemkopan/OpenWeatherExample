@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">OpenWeather</string>
+  <string name="forecast_title">Forecast</string>
+  <string name="loading">Loading...</string>
+  <string name="retry">Retry</string>
+  <string name="city_title_format">Weather for: %s, %s</string>
+  <string name="day_temperature_format">Day temperature: %.1f</string>
+  <string name="day_weather_format">Day weather: %s</string>
+  <string name="min_temp">Min temp:</string>
+  <string name="man_temp">Max temp:</string>
+  <string name="day_temp">Day temp:</string>
+  <string name="night_temp">Night temp:</string>
+</resources>

@@ -1,0 +1,32 @@
+[versions]
+
+# kotlin
+coroutines = "1.6.4"
+
+# gson
+gson = "2.10.1"
+# network
+retrofit = "2.9.0"
+okhttp = "4.10.0"
+
+# di
+dagger = "2.45"
+
+#compose
+composeBom = "2023.01.00"
+composeNav = "2.5.3"
+composeViewModel = "2.6.0"
+composeHilt = "1.0.0"
+composeCoil = "2.2.2"
+
+#desugar
+jdkDesugar = "2.0.2"
+
+#androdix
+lifecycle = "2.5.1"
+core = "1.10.0-rc01"
+
+#testing
+mockk = "1.13.4"
+junit = "5.9.2"
+hamcrest = "2.2"
