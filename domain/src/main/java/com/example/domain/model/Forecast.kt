@@ -8,7 +8,7 @@ data class Forecast(
 ) {
     data class Item(
         val dt: LocalDate,
-        val temp: Temperature,
+        val temp: Temp,
         val weather: List<Weather>
     )
 }

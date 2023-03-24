@@ -7,7 +7,7 @@ import retrofit2.http.Query
 interface ForecastRestClient {
 
     @GET("data/2.5/forecast/daily")
-    suspend fun getWeather(
+    suspend fun getForecast(
         @Query("lat") lat: Double,
         @Query("lon") lon: Double,
         @Query("units") units: String

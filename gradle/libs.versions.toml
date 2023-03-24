@@ -1,7 +1,11 @@
 [versions]
+# android
+gradlePlugin = "8.1.0-alpha10"
 
 # kotlin
 coroutines = "1.6.4"
+kotlin = "1.8.10"
+ksp = "1.8.10-1.0.9"
 
 # gson
 gson = "2.10.1"
@@ -15,7 +19,7 @@ dagger = "2.45"
 #compose
 composeBom = "2023.01.00"
 composeNav = "2.5.3"
-composeViewModel = "2.6.0"
+composeViewModel = "2.6.1"
 composeHilt = "1.0.0"
 composeCoil = "2.2.2"
 
@@ -25,8 +29,20 @@ jdkDesugar = "2.0.2"
 #androdix
 lifecycle = "2.5.1"
 core = "1.10.0-rc01"
+room = "2.5.1"
 
 #testing
 mockk = "1.13.4"
 junit = "5.9.2"
 hamcrest = "2.2"
+
+
+[plugins]
+android-application = { id = 'com.android.application', version.ref = "gradlePlugin" }
+android-library = { id = 'com.android.library', version.ref = "gradlePlugin" }
+kotlin-android = { id = 'org.jetbrains.kotlin.android', version.ref = "kotlin" }
+kotlin-jvm = { id = 'org.jetbrains.kotlin.jvm', version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+hilt = { id = 'com.google.dagger.hilt.android', version.ref = "dagger" }
+ksp = { id = 'com.google.devtools.ksp', version.ref = "ksp" }

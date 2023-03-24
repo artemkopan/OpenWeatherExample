@@ -1,11 +1,9 @@
-import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
-
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
-    id("com.google.dagger.hilt.android")
-    kotlin("kapt")
-    id("kotlin-parcelize")
+    alias (libs.plugins.android.library)
+    alias (libs.plugins.kotlin.android)
+    alias (libs.plugins.kotlin.kapt)
+    alias (libs.plugins.kotlin.parcelize)
+    alias (libs.plugins.hilt)
 }
 
 android {

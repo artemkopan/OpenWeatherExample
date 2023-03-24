@@ -32,7 +32,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.domain.model.City
 import com.example.domain.model.Forecast
-import com.example.domain.model.Temperature
+import com.example.domain.model.Temp
 import com.example.domain.model.Weather
 import com.example.presentation.R
 import com.example.presentation.ui.list.ForecastViewModel.Action
@@ -207,7 +207,7 @@ private fun ContentPreview() {
             items = listOf(
                 Forecast.Item(
                     dt = LocalDate.now(),
-                    Temperature(10.0, 6.0, 6.0, 14.0),
+                    Temp(10.0, 6.0, 6.0, 14.0),
                     listOf(Weather("", "Clouds", "overcast clouds", ""))
                 )
             )

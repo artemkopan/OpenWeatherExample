@@ -1,7 +1,10 @@
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
-    kotlin("kapt")
+    alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.kotlin.parcelize)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -47,4 +50,8 @@ dependencies {
 
     implementation("com.google.dagger:hilt-android:${libs.versions.dagger.get()}")
     kapt("com.google.dagger:hilt-compiler:${libs.versions.dagger.get()}")
+
+    implementation("androidx.room:room-ktx:${libs.versions.room.get()}")
+    implementation("androidx.room:room-runtime:${libs.versions.room.get()}")
+    ksp("androidx.room:room-compiler:${libs.versions.room.get()}")
 }

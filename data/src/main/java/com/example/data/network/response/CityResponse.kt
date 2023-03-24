@@ -8,5 +8,7 @@ data class CityResponse(
     @SerializedName("id")
     val id: String? = null,
     @SerializedName("name")
-    val name: String? = null
+    val name: String? = null,
+    @SerializedName("coord")
+    val coord: LatLngResponse? = null
 )
