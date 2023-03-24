@@ -15,5 +15,6 @@ Shows forecast for one week and temperature details.
 Result:
 
 
-https://user-images.githubusercontent.com/7382939/226796999-2879593f-2eea-4e16-bf3c-591e012c6c9e.mp4
+
+https://user-images.githubusercontent.com/7382939/227620980-e3e02f26-b1df-494a-a454-be9ba73d3cdb.mp4
 
